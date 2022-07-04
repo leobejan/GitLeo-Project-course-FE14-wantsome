@@ -1,0 +1,78 @@
+.signInUp_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 750px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+}
+.signInUp_wrapper #box1_sign_for_sellers {
+  color: white;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(0, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.8) 80%), url("../addition/imgs/guitar-photo-sign-in-up-ph01.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.signInUp_wrapper #box2_sign_form_wrapper {
+  background-color: rgb(227, 239, 245);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signInUp_wrapper #box2_sign_form_wrapper .cls_form_signup {
+  width: 92%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.signInUp_wrapper #box2_sign_form_wrapper .cls_form_signup label {
+  width: 95%;
+}
+.signInUp_wrapper #box2_sign_form_wrapper .cls_form_signup label:nth-of-type(2n) {
+  justify-self: end;
+}
+.signInUp_wrapper #box2_sign_form_wrapper .cls_form_signup input[type=email],
+.signInUp_wrapper #box2_sign_form_wrapper .cls_form_signup input[type=text],
+.signInUp_wrapper #box2_sign_form_wrapper .cls_form_signup input[type=password] {
+  width: 100%;
+  padding: 5px 3px;
+  margin: 5px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.signInUp_wrapper #box2_sign_form_wrapper .cls_form_signup input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 3px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  grid-column: span 2;
+}
+.signInUp_wrapper #box2_sign_form_wrapper .cls_form_signup input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.btnSignPages_EnterHere {
+  background: none;
+  color: white;
+  border: 1px solid white;
+  padding: 5px;
+}
+.btnSignPages_EnterHere:hover {
+  opacity: 50%;
+  cursor: grab;
+}/*# sourceMappingURL=sign-up.css.map */

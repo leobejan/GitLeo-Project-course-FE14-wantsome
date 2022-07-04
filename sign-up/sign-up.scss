@@ -1,0 +1,29 @@
+@import '../addition/css_global/colors';
+@import '../addition/css_global/_mixins-sign-in-up';
+
+.signInUp_wrapper {
+    @include mix_signInUp_wrapper_sup;
+
+    #box1_sign_for_sellers {
+        @include mix_box1_sign_for_sellers;
+    }
+
+    #box2_sign_form_wrapper {
+        @include mix_box2_sign_form_wrapper;
+
+
+        .cls_form_signup {
+            width: 92%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            @include mix_formInputsSignUp;
+
+        }
+    }
+
+}
+
+.btnSignPages_EnterHere {
+    @include mix_btnSignPages_enterHere;
+}

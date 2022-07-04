@@ -1,0 +1,190 @@
+@import "typography";
+@import "colors";
+
+@media screen and (max-width: 980px) {
+    #global_head {
+        nav {
+            #containerTopMenu {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-size: $fontSz_2_5rem;
+    }
+
+    h2 {
+        font-size: $fontSz_2rem;
+    }
+
+    h3 {
+        font-size: $fontSz_1_5rem;
+    }
+
+    p,
+    li,
+    a,
+    button,
+    input {
+        font-size: $fontSz_1rem;
+        line-height: 1.5;
+        text-decoration: none;
+    }
+
+
+
+    #global_head {
+        display: flex;
+
+        nav {
+            width: 100vh;
+            display: flex;
+            flex-flow: row-reverse nowrap;
+            justify-content: space-between;
+            padding: 10px 15px;
+
+            #containerTopMenu {
+                width: 60%;
+                flex-direction: row-reverse;
+
+                .logo {
+                    order: 2;
+                }
+
+                #account_menu {
+                    order: 1;
+                    width: auto;
+                    flex-grow: 0;
+
+                    .containerMenuAccAndBtn {
+                        width: 100%;
+                        display: flex;
+
+                        #menu_opts {
+                            display: none;
+                            padding-right: 3vw;
+
+                            ul {
+                                flex-flow: column wrap;
+                            }
+                        }
+
+                        .mobile_menu_account {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            #categ_menu {
+                justify-content: flex-start;
+                width: auto;
+                background-color: $colorBlack;
+
+                .container980 {
+                    width: auto;
+                    display: flex;
+                    flex-flow: row-reverse wrap;
+
+                    #menu_opts_categ {
+                        padding-left: 3vw;
+                        display: none;
+
+                        ul {
+                            flex-flow: column wrap;
+                        }
+                    }
+
+                    .mobile_menu_categories {
+                        display: block;
+                        width: auto;
+                    }
+                }
+            }
+
+        }
+
+        #hero { 
+            height: 25vh;
+            #hero_container {
+                width: 85vw;
+                
+                form {
+                    flex-flow: column nowrap;                    
+                    
+                    input[type="submit"] {
+                         margin: 1vh 0 0 0;                        
+                      }
+                }
+              }
+        }
+
+    }
+
+// ********************************
+//main > section popular items
+main {
+    .sect_popular_items {
+      .container980 {
+        // @include mix_container980;
+        width:auto;
+        margin: auto;
+        text-align: center;
+      }
+    }
+  }
+  
+  
+
+
+// ********************************
+    footer {
+
+        .container980 {
+
+            .footerContent {
+                flex-direction: column;
+                align-items: center;
+
+                .footerBox1,
+                .footerBox2 {
+                    text-align: center;
+                    padding-bottom:4vh;
+                    h3 {
+                        margin-bottom: 10px;
+                    }
+
+                    ul {
+                        list-style: none;
+                        display: block;
+                    }
+                }
+
+                .footerBox3 {
+                    text-align: center;
+
+                    h3 {
+                        margin-bottom: 10px;
+                    }
+
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        justify-content: center;
+
+                        li i {
+                            font-size: $fontSz_2rem;
+                            margin: 0px 3px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,8 @@
+@import '../addition/css_global/_mixins-sign-in-up';
+@include display_mobiles_sign_pages;
+
+@media screen and (max-width: 480px){
+    .signInUp_wrapper #box2_sign_form_wrapper .cls_form_signup {
+        display:block;
+    }
+}

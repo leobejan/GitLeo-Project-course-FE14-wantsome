@@ -1,0 +1,141 @@
+@mixin display_mobiles_sign_pages {
+  @media screen and (max-width: 768px) {
+    .signInUp_wrapper {
+      max-width: 100vw;
+      grid-template-columns: repeat(auto-fit, minmax(80vw, 1fr));
+
+      #box1_sign_for_sellers {
+        min-height: 300px;
+      }
+    }
+
+  }
+}
+
+
+@mixin mix_signInUp_wrapper_sin {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  max-width: 750px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid $colorLightGrey;
+  border-radius: 5px;
+}
+
+@mixin mix_signInUp_wrapper_sup {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+    width: 750px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid $colorLightGrey;
+  border-radius: 5px;
+}
+
+@mixin mix_box1_sign_for_sellers {
+  color: $colorWhite;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(0, rgba(0, 0, 0, 0.6) 20%, rgba(0, 0, 0, 0.8) 80%), url("../addition/imgs/guitar-photo-sign-in-up-ph01.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@mixin mix_box2_sign_form_wrapper {
+  background-color: rgb(227, 239, 245);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin mix_formInputsSignIn {
+  input[type=email],
+  input[type=text],
+  input[type=password],
+  %shared_input_fields_frm {
+    width: 100%;
+    padding: 5px 3px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid $frm_border_inputs;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: $colorBtnSubmit;
+    color: $colorWhite;
+    padding: 5px 3px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $colorBtnSubmitHover;
+    }
+
+  }
+}
+
+  @mixin mix_formInputsSignUp {
+    label {
+      width: 95%;
+      &:nth-of-type(2n){justify-self: end;}
+    }
+
+
+    input[type=email],
+    input[type=text],
+    input[type=password] {
+      width: 100%;
+      padding: 5px 3px;
+      margin: 5px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type=submit] {
+      width: 100%;
+      background-color: $colorBtnSubmit;
+      color: $colorWhite;
+      padding: 5px 3px;
+      margin: 5px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+
+      grid-column: span 2; //extend the submit button on 2 columns
+
+      &:hover {
+        background-color: $colorBtnSubmitHover;
+      }
+    }
+  }
+
+
+  @mixin mix_btnSignPages_enterHere {
+    background: none;
+    color: $colorWhite;
+    border: 1px solid $colorWhite;
+    padding: 5px;
+
+    &:hover {
+      opacity: 50%;
+      cursor: grab;
+    }
+  }

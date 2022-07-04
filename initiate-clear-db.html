@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - guitar shop</title>
+    <link href="addition/fnt/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./addition/css_global/global.css" />
+    <link rel="stylesheet" href="./addition/css_global/global-mobile.css" />
+    <script src="./addition/js_global/global.js"></script>
+</head>
+
+<body>
+    
+    <header w3-include-html="_inc_header.html" id="global_head">
+        <script type="text/javascript">includeHTML();</script>
+        <!-- we include here by javascript the content of an file, to display header -->
+    </header>
+
+
+
+
+
+
+    <main>
+        <section class="sect_popular_items">
+            <div class="container980">
+                <h3>INITIATE OR CLEAR THE DATABASE</h3>
+                <h4>INFO:</h4>
+                <div class="cls_carousel_prod">
+                    <p>When someone want to play around with this project some data need to be loaded, otherwise the website/app will not work properly.</p>
+                    <p>The data will be loaded from json files into LocalStorage</p>
+                    <p>If you want to start over (refresh the database) u can press the bellow button :)</p>
+                    <p>&nbsp;</p>
+                    <form action="/initiate-clear-db.html" method="get">
+                        <legend>What will be your choice ?</legend>
+                        <button type="submit" value="INITIATE">INITIATE</button>
+                        <button type="submit" value="CLEAR">CLEAR</button>                        
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+    <footer w3-include-html="_inc_footer.html" >
+        
+    </footer>
+    <script src="./addition/js_global/initiate-clear-db.js"></script>
+</body>
+
+
+</html>

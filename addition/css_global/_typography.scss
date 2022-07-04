@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+
+* {font-family: 'Source Sans Pro', sans-serif;
+}
+
+$fontSz_1rem: 1rem;
+$fontSz_1_5rem: 1rem;
+$fontSz_2rem: 1.5rem;
+$fontSz_2_5rem: 2rem;
+$fontSz_3rem: 2.5rem;
+$fontSz_3_5rem: 3rem;
+
+
+h1 {
+    font-size: $fontSz_3_5rem;
+}
+
+h2 {
+    font-size: $fontSz_2_5rem;
+}
+
+h3 {
+    font-size: $fontSz_2rem;
+}
+
+p, li, a, button, input {
+    font-size: $fontSz_1rem;
+    line-height: 1.7;
+    text-decoration: none;
+    // color: white; //do not put color here, only
+    //on specific places
+}

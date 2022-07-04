@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+  .signInUp_wrapper {
+    max-width: 100vw;
+    grid-template-columns: repeat(auto-fit, minmax(80vw, 1fr));
+  }
+  .signInUp_wrapper #box1_sign_for_sellers {
+    min-height: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .signInUp_wrapper #box2_sign_form_wrapper .cls_form_signup {
+    display: block;
+  }
+}/*# sourceMappingURL=sign-up-mobile.css.map */

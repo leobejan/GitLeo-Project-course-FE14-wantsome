@@ -1,0 +1,108 @@
+{
+  "1": {
+    "Type": "electric",
+    "Name": "guitar 1",
+    "Brand": "Epiphone",
+    "ShortDesc": "short desc 1",
+    "Desc": "desc 01",
+    "LRhand": "left",
+    "pic1": "it1-pic01",
+    "xtraPics": [
+      "it1-pic02",
+      "it1-pic03",
+      "it1-pic04",
+      "it1-pic05"
+    ]
+  },
+  "2": {
+    "Type": "acoustic",
+    "Name": "guitar 2",
+    "Brand": "Ibanez",
+    "ShortDesc": "short desc 2",
+    "Desc": "desc 02",
+    "LRhand": "left",
+    "pic1": "it2-pic01",
+    "xtraPics": [
+      "it2-pic02",
+      "it2-pic03",
+      "it2-pic04",
+      "it2-pic05"
+    ]
+  },
+  "3": {
+    "Type": "electro-acoustic",
+    "Name": "guitar 3",
+    "Brand": "Fender",
+    "ShortDesc": "short desc 3",
+    "Desc": "desc 03",
+    "LRhand": "right",
+    "pic1": "it3-pic01",
+    "xtraPics": [
+      "it3-pic02",
+      "it3-pic03",
+      "it3-pic04"
+    ]
+  },
+  "4": {
+    "Type": "bass",
+    "Name": "guitar 4",
+    "Brand": "Squier",
+    "ShortDesc": "short desc 4",
+    "Desc": "desc 04",
+    "LRhand": "right",
+    "pic1": "it4-pic01",
+    "xtraPics": [
+      "it4-pic02",
+      "it4-pic03"
+    ]
+  },
+  "5": {
+    "Type": "accesory",
+    "Name": "guitar 5",
+    "Brand": "Taylor",
+    "ShortDesc": "short desc 5",
+    "Desc": "desc 05",
+    "LRhand": null,
+    "pic1": "it5-pic01",
+    "xtraPics": [
+      "it5-pic02",
+      "it5-pic03"
+    ]
+  },
+  "6": {
+    "Type": "electric",
+    "Name": "guitar 6",
+    "Brand": "Yamaha",
+    "ShortDesc": "short desc 6",
+    "Desc": "desc 06",
+    "LRhand": "right",
+    "pic1": "it6-pic01",
+    "xtraPics": [
+      "it6-pic02",
+      "it6-pic03"
+    ]
+  },
+  "7": {
+    "Type": "electric",
+    "Name": "guitar 7",
+    "Brand": "Alvarez",
+    "ShortDesc": "short desc 7",
+    "Desc": "desc 07",
+    "LRhand": "right",
+    "pic1": "it7-pic01",
+    "xtraPics": [
+      "it7-pic02",
+      "it7-pic03"
+    ]
+  },
+  "8": {
+    "Type": "kit",
+    "Name": "starter kit 01",
+    "Brand": "Ibanez",
+    "ShortDesc": "short",
+    "Desc": "long",
+    "LRhand": "right",
+    "pic1": "it8-pic01",
+    "xtraPics": ""
+  }
+}
