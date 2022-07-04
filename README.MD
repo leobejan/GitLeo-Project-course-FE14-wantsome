@@ -9,9 +9,10 @@
 
 # Todo's:
 - ~~navigation with 2 menu hamburgers~~
+- ~~a page where we can initialize or reset the database (local storage)~~
 - light/dark theme
 - font increase/decrease
-- use IndexedDB instead og LocalStorage (need some time to learn)
+- use IndexedDB instead of LocalStorage (need some time to learn)
 - add some extra back-end juice (PHP + MySql)
 - host it on an personal domain to test it "in production"
 
