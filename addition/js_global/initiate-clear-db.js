@@ -3,23 +3,28 @@ function initiateOrClearDB() {
     let btnPressInit = document.querySelector('button[value="INITIATE"]');
     // console.log('btnPressInit: ', btnPressInit);
     btnPressInit.addEventListener('click', (evt) => {
-        alert('apasat init');
-        const db_produse = localStorage.getItem('db_produse');
-        console.log('db_produse: ', db_produse);
-        alert('db_produse:' + db_produse);
-        evt.preventDefault();
-        //I put here an prevent default in order to stop refreshing
-        //the page and see in console what I need
-        if (!db_produse) {
-            console.log('NU am gasit db_produse :( ');
-            alert('NU am gasit db_produse :( ');
+        let arrTabeleBd = ['db-brands.json', 'db-categories.json', 'db-products.json'];
+        for (const iterator of arrTabeleBd) {
+            // console.log(iterator);
 
-            //const ceSeVaScr = JSON.stringify(readJsonFile('/addition/db_data/db-brands.json'));
-            const ceSeVaScr = readJsonFile('/addition/db_data/db-brands.json');
+            const nameBD = iterator.slice(0, -5);
+            // console.log(nameBD);
 
-            console.log('ceSeVaScr: ', ceSeVaScr);
-            localStorage.setItem("LokSto_produse", ceSeVaScr)
+            // alert('apasat init');
+            const db_content = localStorage.getItem(nameBD);
+            // console.log(`variab dbcontent.. ${nameBD}:: `, db_content);
+            // alert(`${nameBD}:: ` + db_content);
+            evt.preventDefault();
+            //I put here an prevent default in order to stop refreshing
+            //the page and see in console what I need
 
+            if (!db_content) {
+                // console.log('NU am gasit tabel :( ' + nameBD);
+                // alert('NU am gasit tabel :( ' + nameBD);
+
+                const nameFileWithExtension = nameBD + '.json';
+                readFileAndCreateDb(nameBD, nameFileWithExtension);
+            }
         }
     })
 
@@ -28,7 +33,7 @@ function initiateOrClearDB() {
     // console.log('btnPressClear: ', btnPressClear);
     btnPressClear.addEventListener('click', (evt) => {
         evt.preventDefault();
-        alert('apasat clear');
+        // alert('apasat clear');
         localStorage.clear();
     })
 
@@ -36,33 +41,21 @@ function initiateOrClearDB() {
 
 }
 
-async function readJsonFile(locatiaFetch) {
-let toRet = fetch(locatiaFetch)
-        .then(raspuns => {
-            // console.log(raspuns);
-            //vzi si alt log, mai jos:
-            // console.log(raspuns.json());
-            return raspuns.json();
-        })
-        .then(dataRcvd => {
-            /* console.log(dataRcvd);
-            return dataRcvd; */
-            let xx = dataRcvd.length;
-            //return xx;
-        })
-        .catch(ero => {
-            console.log(ero);
-        })
 
-        toRet = 444;
-
-        console.log('toRet: ', toRet);
-        return toRet;
+async function readFileAndCreateDb(nameOfDB, dbLocaFile) {
+    const fileNameConcat = '/addition/db_data/' + dbLocaFile;
+    try {
+        const response = await fetch(fileNameConcat);
+        if (!response.ok) {
+            const message = 'Error with Status Code: ' + response.status;
+            throw new Error(message);
+        }
+        const data = await response.json();
+        console.log(data);
+        localStorage.setItem(nameOfDB, JSON.stringify(data));
+    } catch (erro) {
+        console.log('Error: ' + erro);
+    }
 }
-// readJsonFile('/addition/db_data/db-brands.json');
-
-let ceIseseDinFunc = readJsonFile('/addition/db_data/db-brands.json');
-
-console.log(ceIseseDinFunc);
 
 initiateOrClearDB();
