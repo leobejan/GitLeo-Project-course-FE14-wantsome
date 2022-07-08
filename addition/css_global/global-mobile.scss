@@ -4,11 +4,26 @@
 @media screen and (max-width: 980px) {
     #global_head {
         nav {
-            #containerTopMenu {
+            /* #containerTopMenu {
                 width: 100%;
-            }
+            } */
+            /* #categ_menu {
+                .container980 {
+                  width: 100%;  
+                }
+                
+            } */
         }
     }
+
+    main {
+        .sect_popular_items {
+          .container980 {
+            // @include mix_container980;
+            width:auto;
+          }
+        }
+      }
 }
 
 @media screen and (max-width: 768px) {
@@ -45,13 +60,14 @@
             display: flex;
             flex-flow: row-reverse nowrap;
             justify-content: space-between;
-            padding: 10px 15px;
+            // padding: 10px 15px;
 
             #containerTopMenu {
                 width: 60%;
                 flex-direction: row-reverse;
 
                 .logo {
+                    z-index: 1100;
                     order: 2;
                 }
 
@@ -68,7 +84,7 @@
                             display: none;
                             padding-right: 3vw;
 
-                            ul {
+                            menu {
                                 flex-flow: column wrap;
                             }
                         }
@@ -81,6 +97,7 @@
             }
 
             #categ_menu {
+                display: flex;
                 justify-content: flex-start;
                 width: auto;
                 background-color: $colorBlack;
@@ -89,13 +106,15 @@
                     width: auto;
                     display: flex;
                     flex-flow: row-reverse wrap;
+                    padding: 10px 10px;
 
                     #menu_opts_categ {
                         padding-left: 3vw;
                         display: none;
 
-                        ul {
+                        menu {
                             flex-flow: column wrap;
+                            justify-content: flex-start;
                         }
                     }
 
@@ -109,10 +128,10 @@
         }
 
         #hero { 
-            height: 25vh;
+            height: 30vh;
             #hero_container {
                 width: 85vw;
-                
+                margin-bottom: 2vh;
                 form {
                     flex-flow: column nowrap;                    
                     

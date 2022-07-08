@@ -1,0 +1,8 @@
+@media screen and (max-width: 768px) {
+  main .container980 {
+    flex-flow: row wrap;
+  }
+  main .container980 section.sect_popular_items .products_container {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=products-mobile.css.map */

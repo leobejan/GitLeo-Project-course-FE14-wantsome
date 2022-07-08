@@ -1,0 +1,24 @@
+main {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+main .container980 {
+  width: 980px;
+  display: flex;
+  flex-flow: row nowrap;
+}
+main .container980 section {
+  width: auto;
+  flex-grow: 3;
+}
+main .container980 section .prod_list_top {
+  text-align: center;
+}
+main .container980 section .prod_list_top {
+  text-align: center;
+}
+main .container980 section .product_details_container {
+  text-align: center;
+}/*# sourceMappingURL=product-page.css.map */

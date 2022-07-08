@@ -1,0 +1,30 @@
+@import "../addition/css_global/colors";
+@import "../addition/css_global/mixins";
+
+main {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    .container980 {
+        @include mix_container980;
+        display: flex;
+        flex-flow: row nowrap;
+
+         section {
+            width: auto;
+            flex-grow: 3;
+            .prod_list_top {
+                text-align: center;
+            }
+            .prod_list_top {
+                text-align: center;
+            }
+            .product_details_container {
+                text-align: center;
+            }
+        }
+    }
+
+}

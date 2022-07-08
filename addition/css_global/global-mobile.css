@@ -22,8 +22,20 @@ p, li, a, button, input {
 }
 
 @media screen and (max-width: 980px) {
-  #global_head nav #containerTopMenu {
-    width: 100%;
+  #global_head nav {
+    /* #containerTopMenu {
+        width: 100%;
+    } */
+    /* #categ_menu {
+        .container980 {
+          width: 100%;  
+        }
+
+    } */
+  }
+
+  main .sect_popular_items .container980 {
+    width: auto;
   }
 }
 @media screen and (max-width: 768px) {
@@ -57,13 +69,13 @@ input {
     display: flex;
     flex-flow: row-reverse nowrap;
     justify-content: space-between;
-    padding: 10px 15px;
   }
   #global_head nav #containerTopMenu {
     width: 60%;
     flex-direction: row-reverse;
   }
   #global_head nav #containerTopMenu .logo {
+    z-index: 1100;
     order: 2;
   }
   #global_head nav #containerTopMenu #account_menu {
@@ -79,13 +91,14 @@ input {
     display: none;
     padding-right: 3vw;
   }
-  #global_head nav #containerTopMenu #account_menu .containerMenuAccAndBtn #menu_opts ul {
+  #global_head nav #containerTopMenu #account_menu .containerMenuAccAndBtn #menu_opts menu {
     flex-flow: column wrap;
   }
   #global_head nav #containerTopMenu #account_menu .containerMenuAccAndBtn .mobile_menu_account {
     display: block;
   }
   #global_head nav #categ_menu {
+    display: flex;
     justify-content: flex-start;
     width: auto;
     background-color: black;
@@ -94,23 +107,26 @@ input {
     width: auto;
     display: flex;
     flex-flow: row-reverse wrap;
+    padding: 10px 10px;
   }
   #global_head nav #categ_menu .container980 #menu_opts_categ {
     padding-left: 3vw;
     display: none;
   }
-  #global_head nav #categ_menu .container980 #menu_opts_categ ul {
+  #global_head nav #categ_menu .container980 #menu_opts_categ menu {
     flex-flow: column wrap;
+    justify-content: flex-start;
   }
   #global_head nav #categ_menu .container980 .mobile_menu_categories {
     display: block;
     width: auto;
   }
   #global_head #hero {
-    height: 25vh;
+    height: 30vh;
   }
   #global_head #hero #hero_container {
     width: 85vw;
+    margin-bottom: 2vh;
   }
   #global_head #hero #hero_container form {
     flex-flow: column nowrap;

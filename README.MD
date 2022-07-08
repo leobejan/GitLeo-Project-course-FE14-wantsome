@@ -10,6 +10,7 @@
 # Todo's:
 - ~~navigation with 2 menu hamburgers~~
 - ~~a page where we can initialize or reset the database (local storage)~~
+- ~~include html -> html for header and footer html files~~
 - light/dark theme
 - font increase/decrease
 - use IndexedDB instead of LocalStorage (need some time to learn)
