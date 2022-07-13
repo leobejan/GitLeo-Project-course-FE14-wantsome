@@ -220,11 +220,26 @@ a:hover {
 // ********************************
 //main > section popular items
 main {
-  .sect_popular_items {
+  section.sect_popular_items {
     .container980 {
       @include mix_container980;
       margin: auto;
       text-align: center;
+      .product_carousel_container {
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        .product_carousel_box {
+          width: 150px;
+                    background-color: lightblue;
+                    margin: 10px 10px;
+                    border: 2px solid gray;
+                    border-radius: 5px;
+                    .img_container  {
+                        text-align: center;
+                    }
+        }
+      }
     }
   }
 }

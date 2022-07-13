@@ -135,7 +135,7 @@ input {
     margin: 1vh 0 0 0;
   }
 
-  main .sect_popular_items .container980 {
+  main section.sect_popular_items .container980 {
     width: auto;
     margin: auto;
     text-align: center;

@@ -180,9 +180,24 @@ a:hover {
   cursor: pointer;
 }
 
-main .sect_popular_items .container980 {
+main section.sect_popular_items .container980 {
   width: 980px;
   margin: auto;
+  text-align: center;
+}
+main section.sect_popular_items .container980 .product_carousel_container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+main section.sect_popular_items .container980 .product_carousel_container .product_carousel_box {
+  width: 150px;
+  background-color: lightblue;
+  margin: 10px 10px;
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+main section.sect_popular_items .container980 .product_carousel_container .product_carousel_box .img_container {
   text-align: center;
 }
 

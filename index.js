@@ -34,7 +34,23 @@ async function getProductsFromExtract() {
     let productsExtract = await extractProducts();
     console.log(productsExtract);
 
+    let html = '';
+    productsExtract.slice(0, 3).forEach((product) => {
+        let htmlSegment = `<div class="product_carousel_box">
+        <div class="img_container">
+            <img src="/addition/pics-products/${product.pic1}" height="100px" alt="${product.Name}" />
+        </div>
 
+        <h4>${product.Name}</h4>
+        <div class="prod_type"><b>Type:</b> ${product.Type}. <b>${product.LRhand}</b> handed</div>
+        <div class="prod_show_more"><a href="/product-page/product-page.html?prodId=${product.idProd}">Show more...</a></div>
+                        </div>`;
+
+        html += htmlSegment;
+    });
+
+    let container = document.querySelector('.product_carousel_container');
+    container.innerHTML = html; 
     
 }
 
