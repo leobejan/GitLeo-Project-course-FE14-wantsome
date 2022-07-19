@@ -16,7 +16,7 @@ h3 {
 }
 
 p, li, a, button, input {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.7;
   text-decoration: none;
 }
@@ -36,7 +36,7 @@ p, li, a, button, input {
 
 body {
   background-color: var(--LightThemeBodyBG);
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: rgb(71, 71, 71);
 }
 
@@ -72,6 +72,8 @@ a:hover {
 }
 #global_head nav #containerTopMenu {
   width: 980px;
+  border-left: 0.5px outset gray;
+  border-right: 0.5px outset gray;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -109,6 +111,8 @@ a:hover {
 }
 #global_head nav #categ_menu .container980 {
   width: 980px;
+  border-left: 0.5px outset gray;
+  border-right: 0.5px outset gray;
   padding: 15px 20px;
 }
 #global_head nav #categ_menu .container980 menu {
@@ -150,7 +154,7 @@ a:hover {
   background-blend-mode: overlay;
 }
 #global_head #hero #hero_container {
-  width: 60vw;
+  width: 980px;
   margin: auto;
   text-align: center;
 }
@@ -164,6 +168,7 @@ a:hover {
   flex-grow: 5;
   border: none;
   outline: none;
+  padding: 1px 6px;
 }
 #global_head #hero #hero_container form input[type=text]:focus-visible {
   border: none;
@@ -182,6 +187,8 @@ a:hover {
 
 main section.sect_popular_items .container980 {
   width: 980px;
+  border-left: 0.5px outset gray;
+  border-right: 0.5px outset gray;
   margin: auto;
   text-align: center;
 }
@@ -214,12 +221,18 @@ footer a {
 }
 footer .container980 {
   width: 980px;
+  border-left: 0.5px outset gray;
+  border-right: 0.5px outset gray;
 }
 footer .container980 .footerContent {
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 20px 10px;
+}
+footer .container980 .footerContent .footerBox1,
+footer .container980 .footerContent .footerBox2 {
+  width: 33%;
 }
 footer .container980 .footerContent .footerBox1 h3,
 footer .container980 .footerContent .footerBox2 h3 {
@@ -230,7 +243,11 @@ footer .container980 .footerContent .footerBox2 ul {
   list-style: none;
   display: block;
 }
+footer .container980 .footerContent .footerBox2 {
+  text-align: center;
+}
 footer .container980 .footerContent .footerBox3 {
+  width: 33%;
   text-align: right;
 }
 footer .container980 .footerContent .footerBox3 h3 {

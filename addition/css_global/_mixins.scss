@@ -1,6 +1,8 @@
 @mixin mix_container980 {
     width: 980px;
-    // border: 1px solid pink;
+    border-left: 0.5px outset gray;
+    border-right: 0.5px outset gray;
+    
 }
 
 @mixin mix_textColorWhite {

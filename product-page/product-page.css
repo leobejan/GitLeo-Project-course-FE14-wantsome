@@ -6,6 +6,8 @@ main {
 }
 main .container980 {
   width: 980px;
+  border-left: 0.5px outset gray;
+  border-right: 0.5px outset gray;
   display: flex;
   flex-flow: row nowrap;
 }

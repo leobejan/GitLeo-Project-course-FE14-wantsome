@@ -6,12 +6,15 @@ main {
 }
 main .container980 {
   width: 980px;
+  border-left: 0.5px outset gray;
+  border-right: 0.5px outset gray;
   display: flex;
   flex-flow: row nowrap;
 }
 main .container980 aside {
   width: 420px;
   flex-grow: 1;
+  padding: 0px 8px;
   background-color: rgb(238, 245, 146);
 }
 main .container980 section.sect_popular_items {
@@ -21,13 +24,19 @@ main .container980 section.sect_popular_items {
 main .container980 section.sect_popular_items .prod_list_top {
   text-align: center;
 }
+main .container980 section.sect_popular_items .prod_list_sort_container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0px 5px;
+}
 main .container980 section.sect_popular_items .products_container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
 }
 main .container980 section.sect_popular_items .products_container .product_box {
-  width: 250px;
+  width: 230px;
   background-color: lightblue;
   margin: 10px 10px;
   border: 2px solid gray;

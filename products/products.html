@@ -27,16 +27,60 @@
     <main>
         <div class="container980">
             <aside>
-                <h3>filter here</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, dolor quidem quas perferendis nesciunt
-                    architecto saepe fugiat, cupiditate eius quo voluptatem tempora nemo consectetur ratione. Voluptatem
-                    consequatur unde ratione et?</p>
+                <h3>Filter</h3>
+                <p>Reduce the items displayed, filtering by:</p>
+                <div class="filter_container">
+                    <form action="/" method="get">
+                        <p><label for="sel_type">Type:</label>
+                            <select name="sel_type" id="sel_type">
+                                <option value="electric">electric</option>
+                            </select>
+                        </p>
+
+                        <p><label for="sel_brand">Brand:</label>
+                            <select name="sel_brand" id="sel_brand">
+                                <option value="yamaha">yamaha</option>
+                            </select>
+                        </p>
+
+                        <p><label for="lr_hand_left">Left hand</label>
+                            <input type="radio" name="lr_hand_name" id="lr_hand_left" value="Left hand">
+                            <label for="lr_hand_right">Right hand</label>
+                            <input type="radio" name="lr_hand_name" id="lr_hand_right" value="Right hand">
+                        </p>
+
+                    </form>
+                </div>
 
             </aside>
             <section class="sect_popular_items">
                 <div class="prod_list_top">
                     <h3>PRODUCTS LIST</h3>
-                    <h4>All things here. An filter on left side will help :)</h4>
+                    <h4>All things here. The filter on left side will make your (guitarist) life easier :)</h4>
+                </div>
+                <div class="prod_list_sort_container">
+                    <div>
+                        <form action="/" method="get">
+                            <label for="sort_bt_prod_list">Sort by:</label>
+                                <select name="sort_bt_prod_list" id="sort_bt_prod_list">
+                                    <option value="sortNameAz">Name A-Z</option>
+                                    <option value="sortNameZa">Name Z-A</option>
+                                    <option value="sortPriceAz">Price A-Z</option>
+                                    <option value="sortPriceZa">Price Z-A</option>
+                                </select>                            
+                        </form>
+                    </div>
+                    <div>
+                        <form action="/" method="get">
+                            <label for="no_per_page_prod_list">Products per page:</label>
+                                <select name="no_per_page_prod_list" id="no_per_page_prod_list">
+                                    <option value="6">6</option>
+                                    <option value="8">8</option>
+                                    <option value="12">12</option>
+                                    <option value="16">16</option>
+                                </select>                            
+                        </form>
+                    </div>
                 </div>
 
                 <div class="products_container">
