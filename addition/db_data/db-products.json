@@ -6,8 +6,10 @@
     "Brand": "PRS",
     "ShortDesc": "This is a guitar for serious musicians who are looking for an instrument that is tonally diverse, and handles incredibly well both in live performance and in the studio",
     "Desc": "The PRS Special Semi-Hollow in Black Gold Burst is an exceptional instrument from the incredible luthiers at PRS. Semi-hollow instruments give a very distinctive sound that guitarists of many genres love. The large cavity in the mahogany body increases resonance and provides this model with a more hollow tone which perfectly compliments the clarity of the mahogany neck. All of this is amplified by the 58/15 LT pair which retains all the clarity with a deep low end and extended high end. If you require more diverse switching options, then reach for the push/pull tone pot to unleash the coil split or try the PRS Narrowfield for even more tonal options.",
-    "LRhand": "left",
+    "LRhand": "Left hand",
     "EANcode": "#0342093",
+	"price": 580,
+	"oldPrice": 680,
     "pic1": "electric-01-part-001.jpg",
     "xtraPics": [
       "electric-01-part-002.jpg",
@@ -22,8 +24,10 @@
     "Brand": "Baldwin",
     "ShortDesc": "All of our pre-owned instruments are covered by our 12 month warranty and have been inspected, play-tested and set up before resale",
     "Desc": "The Jazz split sound earns it's name from it's fantastically versatile pickups and electrics. This guitar features the 3 original Burns Split-sound pickups ( each pickup having two coils) - with a rotary control giving four tone selections including the snarlingly out-of-phase ''Wild Dog' and the patented 'Split Sound' which combines different half-coils to accentuate bass and treble registers",
-    "LRhand": "right",
+    "LRhand": "Right hand",
     "EANcode": "#19474",
+	"price": 580,
+	"oldPrice": 680,
     "pic1": "electric-02-part-001.jpg",
     "xtraPics": [
       "electric-02-part-002.jpg",
@@ -39,8 +43,10 @@
     "Brand": "Baldwin",
     "ShortDesc": "This Baldwin 712 is one of their 12-string models, made in Italy, and it sounds fantastic, with plenty of semi-hollow body resonance and 60s jangle",
     "Desc": "We photograph each preowned item/instrument individually using a professional quality photography setup to make sure you see detailed, high resolution images which you can zoom into and explore. We take care to photograph any features, wear, tear or modifications you might want to see before you make the decision to buy. All of our pre-owned instruments are covered by our 12 month warranty and have been inspected, play-tested and set up before resale.",
-    "LRhand": "right",
+    "LRhand": "Right hand",
     "EANcode": "#70513",
+	"price": 580,
+	"oldPrice": 680,
     "pic1": "electric-03-part-001.jpg",
     "xtraPics": [
       "electric-03-part-002.jpg",
@@ -56,8 +62,10 @@
     "Brand": "Fender",
     "ShortDesc": "Neck: 3 out of 5 - The frets have mild wear and/or pitting and may require profiling or replacement in future",
     "Desc": "Combining traditional design with contemporary features, the Standard Jazz Bass is an elegant and affordable classic designed for the bassist who appreciates great style, rich and versatile tone, and excellent value. Time-honored Fender style and performance-minded modern upgrades don't have to break the bank, and this model delivers the best of both in a design ideal for Jazz Bass players everywhere at every level.",
-    "LRhand": "right",
+    "LRhand": "Right hand",
     "EANcode": "#E94196",
+	"price": 580,
+	"oldPrice": 680,
     "pic1": "bass-01-part-001.jpg",
     "xtraPics": [
       "bass-01-part-002.jpg",
@@ -74,8 +82,10 @@
     "Brand": "Martin",
     "ShortDesc": "This beautiful Martin Custom Shop OM Adirondack Spruce/Sinker Mahogany has been crafted by their custom shop",
     "Desc": "Constructed from very unique woods with incredible grain and excellent tonal properties, we wanted to make sure that our Custom orders were going to be exceptional in every way. Sinker wood is taken from logs that have been submerged in swamps or rivers for sometimes up to a century! These logs were from Belize, and have been traced back in documents to at least the 1930s.",
-    "LRhand": "right",
+    "LRhand": "Right hand",
     "EANcode": "#789456123",
+	"price": 580,
+	"oldPrice": 680,
     "pic1": "electro-acoustic-01-part-001.jpg",
     "xtraPics": [
       "electro-acoustic-01-part-002.jpg",
@@ -91,8 +101,10 @@
     "Brand": "ESP",
     "ShortDesc": "The E-II M-II NT in Black Turquoise Burst is fixed bridge riff machine. With a bright finish that reflects it's tone this guitar",
     "Desc": "Right at the heart of this guitar are a set of Bare Knuckle Aftermath pickups. Powered by 3 custom sized ceramic magnets these pickups are perfect for the modern guitarist, with a fast tracking bass response and a midrange that is sure to maintain tightness and crunch even under the heaviest of gains. whether you're playing single notes or complex chords these pickups still carry weight behind all their output, while maintaining a precision that is often hard to find",
-    "LRhand": "right",
+    "LRhand": "Right hand",
     "EANcode": "#11223344",
+	"price": 580,
+	"oldPrice": 680,
     "pic1": "electric-04-part-001.jpg",
     "xtraPics": [
       "electric-04-part-002.jpg",
@@ -106,8 +118,10 @@
     "Brand": "ESP",
     "ShortDesc": "ESP LTD KH-WZ Black Kirk Hammett White Zombie (Pre-Owned) #KHWZ1310. Includes Hard Case",
     "Desc": "desc 07",
-    "LRhand": "right",
+    "LRhand": "Right hand",
     "EANcode": "#KHWZ1310",
+	"price": 580,
+	"oldPrice": 680,
     "pic1": "electric-05-part-001.jpg",
     "xtraPics": [
       "electric-05-part-002.jpg",
@@ -122,8 +136,158 @@
     "Brand": "Gibson",
     "ShortDesc": "Considered to be Gibson's first venture into the world of the dreadnought body shape, the J-45 is now seen to be Gibson's most widely used and best selling acoustic of all time",
     "Desc": "Nicknamed 'The Workhorse' this iconic design has become the cornerstone of Gibson's Round-Shoulder, Dreadnought line. Renowned for its full, well balanced sound, thick bass tones, and great projection, the J-45 is the go-to for artists the World over!",
-    "LRhand": "left",
+    "LRhand": "Left hand",
     "EANcode": "#4444455",
+	"price": 580,
+	"oldPrice": 680,
+    "pic1": "acoustic-01-part-001.jpg",
+    "xtraPics": [
+      "acoustic-01-part-002.jpg",
+      "acoustic-01-part-003.jpg",
+      "acoustic-01-part-004.jpg"
+    ]
+  },
+  {
+    "idProd": 9,
+    "Type": "electric",
+    "Name": "Semi Hollow Black Burst",
+    "Brand": "PRS",
+    "ShortDesc": "This is a guitar for serious musicians who are looking for an instrument that is tonally diverse, and handles incredibly well both in live performance and in the studio",
+    "Desc": "The PRS Special Semi-Hollow in Black Gold Burst is an exceptional instrument from the incredible luthiers at PRS. Semi-hollow instruments give a very distinctive sound that guitarists of many genres love. The large cavity in the mahogany body increases resonance and provides this model with a more hollow tone which perfectly compliments the clarity of the mahogany neck. All of this is amplified by the 58/15 LT pair which retains all the clarity with a deep low end and extended high end. If you require more diverse switching options, then reach for the push/pull tone pot to unleash the coil split or try the PRS Narrowfield for even more tonal options.",
+    "LRhand": "Left hand",
+    "EANcode": "#0342093",
+	"price": 580,
+	"oldPrice": 680,
+    "pic1": "electric-01-part-001.jpg",
+    "xtraPics": [
+      "electric-01-part-002.jpg",
+      "electric-01-part-003.jpg",
+      "electric-01-part-004.jpg"
+    ]
+  },
+  {
+    "idProd": 10,
+    "Type": "electric",
+    "Name": "Baldwin 1967 Jazz Split Sound Sunburst",
+    "Brand": "Baldwin",
+    "ShortDesc": "All of our pre-owned instruments are covered by our 12 month warranty and have been inspected, play-tested and set up before resale",
+    "Desc": "The Jazz split sound earns it's name from it's fantastically versatile pickups and electrics. This guitar features the 3 original Burns Split-sound pickups ( each pickup having two coils) - with a rotary control giving four tone selections including the snarlingly out-of-phase ''Wild Dog' and the patented 'Split Sound' which combines different half-coils to accentuate bass and treble registers",
+    "LRhand": "Right hand",
+    "EANcode": "#19474",
+	"price": 580,
+	"oldPrice": 680,
+    "pic1": "electric-02-part-001.jpg",
+    "xtraPics": [
+      "electric-02-part-002.jpg",
+      "electric-02-part-003.jpg",
+      "electric-02-part-004.jpg",
+      "electric-02-part-005.jpg"
+    ]
+  },
+  {
+    "idProd": 11,
+    "Type": "electric",
+    "Name": "Baldwin 712 Red Electric 12 String",
+    "Brand": "Baldwin",
+    "ShortDesc": "This Baldwin 712 is one of their 12-string models, made in Italy, and it sounds fantastic, with plenty of semi-hollow body resonance and 60s jangle",
+    "Desc": "We photograph each preowned item/instrument individually using a professional quality photography setup to make sure you see detailed, high resolution images which you can zoom into and explore. We take care to photograph any features, wear, tear or modifications you might want to see before you make the decision to buy. All of our pre-owned instruments are covered by our 12 month warranty and have been inspected, play-tested and set up before resale.",
+    "LRhand": "Right hand",
+    "EANcode": "#70513",
+	"price": 580,
+	"oldPrice": 680,
+    "pic1": "electric-03-part-001.jpg",
+    "xtraPics": [
+      "electric-03-part-002.jpg",
+      "electric-03-part-003.jpg",
+      "electric-03-part-004.jpg",
+      "electric-03-part-005.jpg"
+    ]
+  },
+  {
+    "idProd": 12,
+    "Type": "bass",
+    "Name": "Fender 1989Jazz Bass Gunmetal Blue",
+    "Brand": "Fender",
+    "ShortDesc": "Neck: 3 out of 5 - The frets have mild wear and/or pitting and may require profiling or replacement in future",
+    "Desc": "Combining traditional design with contemporary features, the Standard Jazz Bass is an elegant and affordable classic designed for the bassist who appreciates great style, rich and versatile tone, and excellent value. Time-honored Fender style and performance-minded modern upgrades don't have to break the bank, and this model delivers the best of both in a design ideal for Jazz Bass players everywhere at every level.",
+    "LRhand": "Right hand",
+    "EANcode": "#E94196",
+	"price": 580,
+	"oldPrice": 680,
+    "pic1": "bass-01-part-001.jpg",
+    "xtraPics": [
+      "bass-01-part-002.jpg",
+      "bass-01-part-003.jpg",
+      "bass-01-part-004.jpg",
+      "bass-01-part-005.jpg",
+      "bass-01-part-006.jpg"
+    ]
+  },
+  {
+    "idProd": 13,
+    "Type": "electro-acoustic",
+    "Name": "Martin Custom Shop OM Adirondack",
+    "Brand": "Martin",
+    "ShortDesc": "This beautiful Martin Custom Shop OM Adirondack Spruce/Sinker Mahogany has been crafted by their custom shop",
+    "Desc": "Constructed from very unique woods with incredible grain and excellent tonal properties, we wanted to make sure that our Custom orders were going to be exceptional in every way. Sinker wood is taken from logs that have been submerged in swamps or rivers for sometimes up to a century! These logs were from Belize, and have been traced back in documents to at least the 1930s.",
+    "LRhand": "Right hand",
+    "EANcode": "#789456123",
+	"price": 580,
+	"oldPrice": 680,
+    "pic1": "electro-acoustic-01-part-001.jpg",
+    "xtraPics": [
+      "electro-acoustic-01-part-002.jpg",
+      "electro-acoustic-01-part-003.jpg",
+      "electro-acoustic-01-part-004.jpg",
+      "electro-acoustic-01-part-005.jpg"
+    ]
+  },
+  {
+    "idProd": 14,
+    "Type": "electric",
+    "Name": "ESP E-II Horizon NT HS Granite Sparkle",
+    "Brand": "ESP",
+    "ShortDesc": "The E-II M-II NT in Black Turquoise Burst is fixed bridge riff machine. With a bright finish that reflects it's tone this guitar",
+    "Desc": "Right at the heart of this guitar are a set of Bare Knuckle Aftermath pickups. Powered by 3 custom sized ceramic magnets these pickups are perfect for the modern guitarist, with a fast tracking bass response and a midrange that is sure to maintain tightness and crunch even under the heaviest of gains. whether you're playing single notes or complex chords these pickups still carry weight behind all their output, while maintaining a precision that is often hard to find",
+    "LRhand": "Right hand",
+    "EANcode": "#11223344",
+	"price": 580,
+	"oldPrice": 680,
+    "pic1": "electric-04-part-001.jpg",
+    "xtraPics": [
+      "electric-04-part-002.jpg",
+      "electric-04-part-003.jpg"
+    ]
+  },
+  {
+    "idProd": 15,
+    "Type": "electric",
+    "Name": "ESP LTD KH-WZ Black Kirk",
+    "Brand": "ESP",
+    "ShortDesc": "ESP LTD KH-WZ Black Kirk Hammett White Zombie (Pre-Owned) #KHWZ1310. Includes Hard Case",
+    "Desc": "desc 07",
+    "LRhand": "Right hand",
+    "EANcode": "#KHWZ1310",
+	"price": 580,
+	"oldPrice": 680,
+    "pic1": "electric-05-part-001.jpg",
+    "xtraPics": [
+      "electric-05-part-002.jpg",
+      "electric-05-part-003.jpg",
+      "electric-05-part-004.jpg"
+    ]
+  },
+  {
+    "idProd": 16,
+    "Type": "acoustic",
+    "Name": "Gibson J-45 Standard Vintage Sunburst",
+    "Brand": "Gibson",
+    "ShortDesc": "Considered to be Gibson's first venture into the world of the dreadnought body shape, the J-45 is now seen to be Gibson's most widely used and best selling acoustic of all time",
+    "Desc": "Nicknamed 'The Workhorse' this iconic design has become the cornerstone of Gibson's Round-Shoulder, Dreadnought line. Renowned for its full, well balanced sound, thick bass tones, and great projection, the J-45 is the go-to for artists the World over!",
+    "LRhand": "Left hand",
+    "EANcode": "#4444455",
+	"price": 580,
+	"oldPrice": 680,
     "pic1": "acoustic-01-part-001.jpg",
     "xtraPics": [
       "acoustic-01-part-002.jpg",

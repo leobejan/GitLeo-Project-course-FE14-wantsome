@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../addition/css_global/global-mobile.css" />
   <link rel="stylesheet" href="sign-in.css" />
   <link rel="stylesheet" href="sign-in-mobile.css" />
-  <script src="sign-in.js"></script>
+  
 </head>
 
 <body>
@@ -26,10 +26,14 @@
 
         <form action="#" method="get" class="cls_form_signin">
           <label for="frmEmail">Email Address:</label>
-          <input type="email" name="frmEmail" id="frmEmail">
+          <input type="email" name="frmEmail" id="frmEmail" required minlength="6">
           <label for="frmPasswd">Password:</label>
-          <input type="password" name="frmPasswd" id="frmPasswd">
+          <input type="password" name="frmPasswd" id="frmPasswd" required minlength="6">
           <input type="submit" value="Sign In">
+
+          <span role="alert" id="holderForError" aria-hidden="true">
+            dynamic text from JS with error
+          </span>
         </form>
 
       <div><a href="/sign-up/sign-up.html" target="_self" rel="noopener noreferrer">Don't have an account ? Sign Up Here !</a>
@@ -42,7 +46,7 @@
 
 
 
-
+  <script src="sign-in.js"></script>
 </body>
 
 </html>

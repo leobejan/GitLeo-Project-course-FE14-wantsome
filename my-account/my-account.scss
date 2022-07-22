@@ -1,0 +1,32 @@
+@import "../addition/css_global/colors";
+@import "../addition/css_global/mixins";
+
+.txtRed {
+    color: red;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    .container980 {
+        @include mix_container980;
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 10px 10px;
+
+        section {
+            width: auto;
+            flex-grow: 3;
+
+            .user_top {
+                text-align: center;
+            }
+            .usr_details_container {
+                text-align: center;
+            }
+        }
+    }
+}

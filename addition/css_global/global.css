@@ -22,7 +22,7 @@ p, li, a, button, input {
 }
 
 :root {
-  --LightThemeBodyBG: #f7f7f7;
+  --LightThemeBodyBG: #e9e8e8;
   --LightThemeTextColour: rgb(71, 71, 71);
   --DarkThemeBodyBG: #161616;
   --DarkThemeTextColour: $colorWhite;
@@ -72,8 +72,8 @@ a:hover {
 }
 #global_head nav #containerTopMenu {
   width: 980px;
-  border-left: 0.5px outset gray;
-  border-right: 0.5px outset gray;
+  /* border-left: 0.5px outset gray;
+  border-right: 0.5px outset gray; */
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -111,8 +111,8 @@ a:hover {
 }
 #global_head nav #categ_menu .container980 {
   width: 980px;
-  border-left: 0.5px outset gray;
-  border-right: 0.5px outset gray;
+  /* border-left: 0.5px outset gray;
+  border-right: 0.5px outset gray; */
   padding: 15px 20px;
 }
 #global_head nav #categ_menu .container980 menu {
@@ -187,8 +187,8 @@ a:hover {
 
 main section.sect_popular_items .container980 {
   width: 980px;
-  border-left: 0.5px outset gray;
-  border-right: 0.5px outset gray;
+  /* border-left: 0.5px outset gray;
+  border-right: 0.5px outset gray; */
   margin: auto;
   text-align: center;
 }
@@ -199,9 +199,9 @@ main section.sect_popular_items .container980 .product_carousel_container {
 }
 main section.sect_popular_items .container980 .product_carousel_container .product_carousel_box {
   width: 150px;
-  background-color: lightblue;
+  background-color: white;
   margin: 10px 10px;
-  border: 2px solid gray;
+  border: 2px solid lightgrey;
   border-radius: 5px;
 }
 main section.sect_popular_items .container980 .product_carousel_container .product_carousel_box .img_container {
@@ -221,8 +221,8 @@ footer a {
 }
 footer .container980 {
   width: 980px;
-  border-left: 0.5px outset gray;
-  border-right: 0.5px outset gray;
+  /* border-left: 0.5px outset gray;
+  border-right: 0.5px outset gray; */
 }
 footer .container980 .footerContent {
   width: 100%;

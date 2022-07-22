@@ -57,6 +57,16 @@
 .signInUp_wrapper #box2_sign_form_wrapper .cls_form_signin input[type=submit]:hover {
   background-color: #45a049;
 }
+.signInUp_wrapper #box2_sign_form_wrapper #holderForError {
+  display: none;
+  color: red;
+}
+.signInUp_wrapper #box2_sign_form_wrapper #holderForError.visible {
+  display: block;
+}
+.signInUp_wrapper #box2_sign_form_wrapper input.invalid {
+  border-color: red;
+}
 
 .btnSignPages_EnterHere {
   background: none;

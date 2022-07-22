@@ -1,17 +1,19 @@
 [{
-    "username": "john",
+    "userID": "1",
+	"username": "john",
     "firstName": "John",
     "lastName": "Doe",
     "gender": "Male",
-    "profileURL": "img/male.png",
-    "email": "john.doe@example.com"
+    "passwd": "123456",
+    "email": "john@doe.com"
 },
 {
-    "username": "jane",
+    "userID": "2",
+	"username": "jane",
     "firstName": "Jane",
     "lastName": "Doe",
     "gender": "Female",
-    "profileURL": "img/female.png",
-    "email": "jane.doe@example.com"
+    "passwd": "654321",
+    "email": "jane@doe.com"
 }
 ]

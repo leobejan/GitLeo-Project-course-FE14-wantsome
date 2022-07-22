@@ -1,32 +1,3 @@
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /* Loop through a collection of all HTML elements: */
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /* Make an HTTP request using the attribute value as the file name: */
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function () {
-        if (this.readyState == 4) {
-          if (this.status == 200) { elmnt.innerHTML = this.responseText; }
-          if (this.status == 404) { elmnt.innerHTML = "Page not found."; }
-          /* Remove the attribute, and call this function once more: */
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
-        }
-      }
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /* Exit the function: */
-      return;
-    }
-  }
-}
-
-
 
 
 function displayMenuAccountMobile(menuList, setMenuMobileWidth, theOtherOne, leftOrRight) {
@@ -100,4 +71,59 @@ function changeSomeOnWindowResize() {
 }
 
 window.addEventListener('resize', changeSomeOnWindowResize);
+
+
+const userLoggedIn =JSON.parse(localStorage.getItem('usrLoggedIn'));
+// console.log('userLoggedIn: ', userLoggedIn);
+const loggedUserName = userLoggedIn[1];
+// console.log('loggedUserName: ', loggedUserName);
+
+
+function getUsr() {
+  const select1 = document.querySelector('menu > li');
+  // console.log('select1:', select1);
+  return select1;
+}
+//bellow we try to read from html but no luck
+//most probably because of use of include external html with javascript :(
+/* window.addEventListener('load', () => {
+  setTimeout(getUsr(), 3000);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  // your code here
+  setTimeout(getUsr(), 3000);
+}, false);
+
+document.onreadystatechange = function(){
+  if (document.readyState === "complete") {
+    // getUsr();
+  }
+  else {
+     window.onload = function () {
+      // getUsr();
+     };
+  };
+} */
+
+//solution:
+setTimeout(() => {
+  // console.log("2 Delayed for 1 second.");
+  getUsr();
+
+if (loggedUserName) {
+const fromGetUsr = getUsr();
+// console.log('fromGetUsr', fromGetUsr);
+htmlOnList = `welcome, ${loggedUserName}`;
+fromGetUsr.innerHTML = htmlOnList;  
+
+}
+else {
+  htmlOnList = `<a href="/sign-in/sign-in.html" target="_self" rel="noopener noreferrer"><i
+  class="fa-solid fa-right-to-bracket"></i> Log In / Sign Up</a>`;
+}
+
+
+
+}, "500")
 

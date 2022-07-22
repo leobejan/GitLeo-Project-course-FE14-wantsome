@@ -18,6 +18,19 @@
       @include mix_formInputsSignIn;
 
     }
+
+    #holderForError {
+      display: none;
+      color: red;
+    }
+    
+    #holderForError.visible {
+      display: block;
+    }
+    
+    input.invalid {
+      border-color: red;
+    }
   }
 
 }

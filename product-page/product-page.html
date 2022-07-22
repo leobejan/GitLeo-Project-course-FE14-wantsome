@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="/addition/css_global/global-mobile.css" />
     <link rel="stylesheet" href="product-page.css" />
     <link rel="stylesheet" href="product-page-mobile.css" />
-    <script src="/addition/js_global/global.js"></script>
-    <script src="product-page.js"></script>
+    <script src="/addition/js_global/glob-for-includehtml.js"></script>
+        
 </head>
 
 <body>
@@ -26,17 +26,42 @@
 
     <main>
         <div class="container980">
-            
-            <section>
-                <div class="prod_list_top">
+            <nav aria-label="Breadcrumb" class="breadcrumb">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/products/products.html">Products</a></li>
+                    <li><span aria-current="page">Product page</span></li>
+                </ul>
+            </nav>
+            <div class="prod_list_top">
                     <h3>details page of product</h3>
-                    <h4>work in progress...</h4>
+                    <!-- inserted dynamic by JS -->
                 </div>
-
-                <div class="product_details_container">
-                    some details will go here
+            <section class="product_data">
+                <div class="left_container">                    
+                    <div class="photo">
+                        photo here
+                        <div id="photo_big">
+                            <img src="/addition/pics-products/acoustic-01-part-001.jpg" alt="" height="150px">
+                        </div>
+                    </div>  
+                    <div class="desc_text">
+                        desc here
+                    </div>  
+                    <div class="details_text">
+                        details here
+                    </div>
                 </div>
-
+                <div class="add2cart_container">
+                    <div class="addtocart_holder">
+                        <div class="titleInCart"></div>
+                        <div class="priceAndPlusMinus">-  +
+                        </div>
+                        <div class="add_btn">
+                            <button type="submit">Add to card</button>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
     </main>
@@ -49,7 +74,8 @@
     <footer w3-include-html="/_inc_footer.html">
 
     </footer>
-
+    <script src="/addition/js_global/global.js"></script>
+    <script src="product-page.js"></script>
 </body>
 
 

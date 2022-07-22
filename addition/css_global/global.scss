@@ -4,7 +4,7 @@
 
 //to play a little with css custom properties :)
 :root {
-  --LightThemeBodyBG: #f7f7f7;
+  --LightThemeBodyBG: #e9e8e8;
   --LightThemeTextColour: rgb(71, 71, 71);
   --DarkThemeBodyBG: #161616;
   --DarkThemeTextColour: $colorWhite;
@@ -226,7 +226,7 @@ main {
     .container980 {
       @include mix_container980;
       margin: auto;
-      text-align: center;
+      text-align: center;      
 
       .product_carousel_container {
         display: flex;
@@ -235,9 +235,9 @@ main {
 
         .product_carousel_box {
           width: 150px;
-          background-color: lightblue;
+          background-color: $colorWhite;
           margin: 10px 10px;
-          border: 2px solid gray;
+          border: 2px solid $colorLightGrey;
           border-radius: 5px;
 
           .img_container {

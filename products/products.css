@@ -1,3 +1,7 @@
+.hidden {
+  display: none;
+}
+
 main {
   width: 100%;
   display: flex;
@@ -6,16 +10,22 @@ main {
 }
 main .container980 {
   width: 980px;
-  border-left: 0.5px outset gray;
-  border-right: 0.5px outset gray;
+  /* border-left: 0.5px outset gray;
+  border-right: 0.5px outset gray; */
   display: flex;
   flex-flow: row nowrap;
+  padding: 10px 10px;
 }
 main .container980 aside {
-  width: 420px;
+  width: 200px;
   flex-grow: 1;
   padding: 0px 8px;
-  background-color: rgb(238, 245, 146);
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+main .container980 aside .filter_container form p select {
+  width: 160px;
 }
 main .container980 section.sect_popular_items {
   width: auto;
@@ -37,11 +47,40 @@ main .container980 section.sect_popular_items .products_container {
 }
 main .container980 section.sect_popular_items .products_container .product_box {
   width: 230px;
-  background-color: lightblue;
+  background-color: white;
   margin: 10px 10px;
   border: 2px solid gray;
   border-radius: 5px;
+  padding: 10px 10px;
 }
 main .container980 section.sect_popular_items .products_container .product_box .img_container {
   text-align: center;
+  background-color: white;
+}
+main .container980 section.sect_popular_items .pagination-wrapper {
+  position: relative;
+}
+main .container980 section.sect_popular_items .pagination-wrapper .pagination-container {
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  justify-content: center;
+}
+main .container980 section.sect_popular_items .pagination-wrapper .pagination-number,
+main .container980 section.sect_popular_items .pagination-wrapper .pagination-button {
+  font-size: 1.1rem;
+  border: none;
+  margin: 0.25rem 0.25rem;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 0.2rem;
+}
+main .container980 section.sect_popular_items .pagination-wrapper .pagination-number:hover,
+main .container980 section.sect_popular_items .pagination-wrapper .pagination-button:not(.disabled):hover {
+  background: #fff;
+}
+main .container980 section.sect_popular_items .pagination-wrapper .pagination-number.active {
+  color: #fff;
+  background: #0085b6;
 }/*# sourceMappingURL=products.css.map */

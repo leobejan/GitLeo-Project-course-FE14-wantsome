@@ -1,0 +1,28 @@
+.txtRed {
+  color: red;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+main .container980 {
+  width: 980px;
+  /* border-left: 0.5px outset gray;
+  border-right: 0.5px outset gray; */
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 10px 10px;
+}
+main .container980 section {
+  width: auto;
+  flex-grow: 3;
+}
+main .container980 section .user_top {
+  text-align: center;
+}
+main .container980 section .usr_details_container {
+  text-align: center;
+}/*# sourceMappingURL=my-account.css.map */

@@ -1,6 +1,10 @@
 @import "../addition/css_global/colors";
 @import "../addition/css_global/mixins";
 
+.hidden {
+    display: none;
+  }
+
 main {
     width: 100%;
     display: flex;
@@ -11,41 +15,97 @@ main {
         @include mix_container980;
         display: flex;
         flex-flow: row nowrap;
+        padding: 10px 10px;
 
         aside {
-            width: 420px;
+            width: 200px;
             flex-grow: 1;
             padding: 0px 8px;
-            background-color: rgb(238, 245, 146);
+            background-color: $colorWhite;
+            border: 1px solid $colorWhite;
+            border-radius: 10px;
+
+            .filter_container {
+                form {
+                    p {
+                        select {
+                            width: 160px;
+                        }
+                    }
+                }
+            }
         }
 
         section.sect_popular_items {
             width: auto;
             flex-grow: 3;
+
             .prod_list_top {
                 text-align: center;
             }
-            .prod_list_sort_container{
-                display:flex;
+
+            .prod_list_sort_container {
+                display: flex;
                 flex-flow: row wrap;
                 justify-content: space-between;
-                padding:0px 5px;
+                padding: 0px 5px;
             }
+
             .products_container {
-                display:flex;
+                display: flex;
                 flex-flow: row wrap;
                 justify-content: center;
+
                 .product_box {
                     width: 230px;
-                    background-color: lightblue;
+                    background-color: $colorWhite;
                     margin: 10px 10px;
                     border: 2px solid gray;
                     border-radius: 5px;
-                    .img_container  {
+                    padding: 10px 10px;
+
+                    .img_container {
                         text-align: center;
+                        background-color: $colorWhite;
                     }
                 }
             }
+
+            .pagination-wrapper {
+                position: relative;
+                 .pagination-container {
+                    display: flex;
+                    align-items: center;
+                    // position: absolute;
+                    bottom: 0;
+                    justify-content: center;
+                }
+
+                .pagination-number,
+                .pagination-button {
+                    font-size: 1.1rem;
+                    // background-color: transparent;
+                    border: none;
+                    margin: 0.25rem 0.25rem;
+                    cursor: pointer;
+                    height: 2.5rem;
+                    width: 2.5rem;
+                    border-radius: .2rem;
+                }
+
+                .pagination-number:hover,
+                .pagination-button:not(.disabled):hover {
+                    background: #fff;
+                }
+
+                .pagination-number.active {
+                    color: #fff;
+                    background: #0085b6;
+                }
+            }
+
+
+
         }
     }
 

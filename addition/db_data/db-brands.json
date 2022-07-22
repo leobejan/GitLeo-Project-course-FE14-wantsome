@@ -1,11 +1,9 @@
-{
-  "1": "Martin",
-  "2": "Ibanez",
-  "3": "Fender",
-  "4": "Gibson",
-  "5": "Taylor",
-  "6": "Yamaha",
-  "7": "ESP",
-  "8": "Baldwin",
-  "9": "PRS"
-}
+[
+  "ALL",
+  "Martin",
+  "Fender",
+  "Gibson",
+  "ESP",
+  "Baldwin",
+  "PRS"
+]

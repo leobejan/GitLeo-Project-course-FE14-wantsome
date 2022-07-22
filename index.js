@@ -32,7 +32,7 @@ return newData;
 
 async function getProductsFromExtract() {
     let productsExtract = await extractProducts();
-    console.log(productsExtract);
+    // console.log(productsExtract);
 
     let html = '';
     productsExtract.slice(0, 3).forEach((product) => {
@@ -108,3 +108,4 @@ async function renderUsers() {
 
 // renderUsers();
 */
+

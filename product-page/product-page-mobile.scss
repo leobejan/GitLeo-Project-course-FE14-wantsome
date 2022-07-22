@@ -1,18 +1,18 @@
 @media screen and (max-width: 768px) {
     main {  
         .container980 {    
-             section {
-                
                 .prod_list_top {
                     text-align: center;
                 }
-                .prod_list_top {
-                    text-align: center;
+                section.product_data {
+                    .left_container {
+                        width: 380px;                        
+                    }
+        
+                    .add2cart_container {
+                    }
                 }
-                .product_details_container {
-                    text-align: center;
-                }
-            }
+            
         }
     
     }

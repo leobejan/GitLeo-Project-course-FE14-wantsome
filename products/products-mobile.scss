@@ -2,6 +2,11 @@
     main {
         .container980 {
             flex-flow: row wrap;
+
+            aside {
+                width: auto;                
+            }
+
             section.sect_popular_items {                
                 .products_container {                    
                     justify-content: center;

@@ -3,7 +3,7 @@ function initiateOrClearDB() {
     let btnPressInit = document.querySelector('button[value="INITIATE"]');
     // console.log('btnPressInit: ', btnPressInit);
     btnPressInit.addEventListener('click', (evt) => {
-        let arrTabeleBd = ['db-brands.json', 'db-categories.json', 'db-products.json'];
+        let arrTabeleBd = ['db-brands.json', 'db-categories.json', 'db-products.json', 'user_prefs.json', 'users.json'];
         for (const iterator of arrTabeleBd) {
             // console.log(iterator);
 
