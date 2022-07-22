@@ -84,12 +84,6 @@ main .container980 section.product_data .add2cart_container .addtocart_holder {
 main .container980 section.product_data .add2cart_container .addtocart_holder .priceAndPlusMinus button {
   width: 20px;
 }
-main .container980 section.product_data .add2cart_container .addtocart_holder .add_btn {
-  /* button {
-      width: 60%;
-      background-color: #4CAF50;
-  } */
-}
 main .container980 section.product_data .add2cart_container .addtocart_holder .add_btn button {
   width: 70%;
   background-color: #4CAF50;

@@ -431,7 +431,7 @@ window.addEventListener("load", () => {
     updateSelectRadioHtml('sides');
 });
 
-//END of pagination stuff...
+//END of pagination stuff....
 
 
 

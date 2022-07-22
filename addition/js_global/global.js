@@ -75,8 +75,13 @@ window.addEventListener('resize', changeSomeOnWindowResize);
 
 const userLoggedIn =JSON.parse(localStorage.getItem('usrLoggedIn'));
 // console.log('userLoggedIn: ', userLoggedIn);
-const loggedUserName = userLoggedIn[1];
+
+let loggedUserName = '';
+if (userLoggedIn) {
+loggedUserName = userLoggedIn[1];
 // console.log('loggedUserName: ', loggedUserName);
+}
+
 
 
 function getUsr() {

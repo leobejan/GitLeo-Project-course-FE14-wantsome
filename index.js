@@ -79,6 +79,7 @@ users.json =
 }
 ];
 //AN EXAMPLE of promise with try/catch
+
 async function getUsers() {
     let url = '/addition/db_data/users.json';
     try {

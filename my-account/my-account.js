@@ -31,7 +31,7 @@ divToModify.innerHTML = html2add2div;
 
 
 function logout() {
-    // alert('logout btn pressed');
+    // alert('logout btn pressed'); //note
     localStorage.removeItem('usrLoggedIn');
     location.reload();
 }

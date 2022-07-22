@@ -12,6 +12,7 @@ main {
     justify-content: center;
 
     .container980 {
+        
         @include mix_container980;
         display: flex;
         flex-flow: row nowrap;
@@ -30,3 +31,4 @@ main {
         }
     }
 }
+

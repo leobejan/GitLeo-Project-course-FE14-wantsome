@@ -2,7 +2,7 @@
 
 /* const emailField = document.querySelector('#frmEmail');
 // console.log("emailField", emailField);
-emailField.addEventListener("input", () => {
+ emailField.addEventListener("input", () => {
   emailField.setCustomValidity("");
   emailField.checkValidity();
   console.log('check: ', emailField.checkValidity());

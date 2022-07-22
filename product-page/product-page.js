@@ -1,7 +1,7 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const productId = urlParams.get('prodId');
-// console.log(productId);
+//console.log(productId);
 dataAll = JSON.parse(localStorage.getItem('db-products'));
 // console.log(dataAll);
 prod_details = dataAll.find(( { idProd } ) => idProd == productId);
