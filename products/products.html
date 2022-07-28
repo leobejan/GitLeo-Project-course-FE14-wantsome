@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="products.css" />
     <link rel="stylesheet" href="products-mobile.css" />
     <script src="/addition/js_global/glob-for-includehtml.js"></script>
-    
+
 </head>
 
 <body>
 
     <header w3-include-html="/_inc_header.html" id="global_head">
         <script type="text/javascript">includeHTML();</script>
-        <!-- we inclu de here by javascript the content of an file, to display header -->
+        <!-- we include here by javascript the content of an file, to display header -->
     </header>
 
 
@@ -30,25 +30,68 @@
                 <h3>Filter</h3>
                 <p>Reduce the items displayed, filtering by:</p>
                 <div class="filter_container">
-                    <form action="/" method="get">
-                        <p><label for="sel_type"><strong>Type:</strong></label>
+                    <form action="/" method="get" id="filterForm">
+                        <div class="filter_category">
+                            <label for="sel_type"><strong>Type:</strong></label>
                             <select name="sel_type" id="sel_type">
                                 <option value="NO-DATA_loaded">NO-DATA_loaded</option>
                             </select>
-                        </p>
+                        </div>
 
-                        <p><label for="sel_brand"><strong>Brand:</strong></label>
+                        <div class="filter_category">
+                            <label for="sel_brand"><strong>Brand:</strong></label>
                             <select name="sel_brand" id="sel_brand">
                                 <option value="NO-DATA_loaded">NO-DATA_loaded</option>
                             </select>
-                        </p>
+                        </div>
 
-                        <p><strong>Side:</strong><br />
-                            <label for="lr_hand_left">Left hand</label>
-                            <input type="radio" name="lr_hand_name" id="lr_hand_left" value="Left hand">
-                            <label for="lr_hand_right">Right hand</label>
-                            <input type="radio" name="lr_hand_name" id="lr_hand_right" value="Right hand">
-                        </p>
+                        <div class="filter_category" id="side_radio">
+                            <strong>Side:</strong>
+                            <div>
+                                <input type="radio" name="lr_hand_name" id="lr_hand_both" value="Both" checked>
+                                <label for="lr_hand_both">Both</label>
+                            </div>
+                            
+                            <div>
+                                <input type="radio" name="lr_hand_name" id="lr_hand_left" value="Left hand">
+                                <label for="lr_hand_left">Left hand</label>
+                            </div>
+                            
+                            <div>
+                                <input type="radio" name="lr_hand_name" id="lr_hand_right" value="Right hand">
+                                <label for="lr_hand_right">Right hand</label>                            
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="filter_category" id="colour">
+                            <legend><strong>Colour:</strong></legend>
+                            <div class="filter_color_red">
+                                <label for="red">Red</label>
+                                <input type="checkbox" value="Red" id="red" name="red" />
+                            </div>
+                            <div class="filter_color_blue">
+                                <label for="blue">Blue</label>
+                                <input type="checkbox" value="Blue" id="blue" name="blue" />
+                            </div>
+                            <div class="filter_color_red">
+                                <label for="black">Black</label>
+                                <input type="checkbox" value="Black" id="black" name="black" />
+                            </div>
+                        </div>
+
+                        <div class="filter_category" id="filter_price">
+                            <legend><strong>Price</strong></legend>
+                            <div class="frm_price_flex">
+                                <div class="price-input">
+                                    <input type="number" value="" id="price-min" step="50" />
+                                </div>
+                                <div>&nbsp;-&nbsp;</div>
+                                <div class="price-input">
+                                    <input type="number" value="" id="price-max" step="50" />
+                                </div>
+                                <div class="font-bold">&nbsp;$&nbsp;</div>
+                            </div>
 
                     </form>
                 </div>
@@ -60,6 +103,9 @@
                     <h4>All things here. The filter on left side will make your (guitarist) life easier :)</h4>
                 </div>
                 <div class="prod_list_sort_container">
+                    <div id="number_items_found">
+                        Found: x items
+                    </div>
                     <div>
                         <form action="/" method="get">
                             <label for="sort_bt_prod_list">Sort by:</label>
@@ -90,7 +136,7 @@
 
                 <div class="products_container">
                 </div>
-                
+
                 <div class="pagination-wrapper">
                     <nav class="pagination-container">
                         <button class="pagination-button" id="prev-button" title="Previous page"

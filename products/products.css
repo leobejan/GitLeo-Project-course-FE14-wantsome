@@ -10,25 +10,43 @@ main {
 }
 main .container980 {
   width: 980px;
-  /*border-left: 0.5px outset gray;
-  border-right: 0.5px outset gray;*/
+  /* border-left: 0.5px outset gray;
+  border-right: 0.5px outset gray; */
   display: flex;
   flex-flow: row nowrap;
   padding: 10px 10px;
 }
 main .container980 aside {
-  width: 200px;
-  flex-grow: 1;
+  min-width: 220px;
+  max-width: 220px;
   padding: 0px 8px;
   background-color: white;
   border: 1px solid white;
   border-radius: 10px;
+  flex-grow: 1;
 }
-main .container980 aside .filter_container form p select {
+main .container980 aside .filter_container form div.filter_category {
+  /* display:flex;
+  flex-flow: column wrap; */
+  padding: 10px 0;
+}
+main .container980 aside .filter_container form div.filter_category:not([id=side_radio]) {
+  display: flex;
+  flex-flow: column wrap;
+}
+main .container980 aside .filter_container form div.filter_category select {
   width: 160px;
 }
+main .container980 aside .filter_container form div.filter_category .frm_price_flex {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+main .container980 aside .filter_container form div.filter_category .frm_price_flex input[type=number] {
+  width: 50px;
+}
 main .container980 section.sect_popular_items {
-  width: auto;
+  max-width: 760px;
   flex-grow: 3;
 }
 main .container980 section.sect_popular_items .prod_list_top {

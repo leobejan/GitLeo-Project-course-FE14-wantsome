@@ -81,8 +81,46 @@ main .container980 section.product_data .add2cart_container .addtocart_holder {
   background-color: #deefef;
   border: 1px solid grey;
 }
-main .container980 section.product_data .add2cart_container .addtocart_holder .priceAndPlusMinus button {
-  width: 20px;
+main .container980 section.product_data .add2cart_container .addtocart_holder .priceAndPlusMinus {
+  /* button {
+      width: 20px;
+  } */
+  display: inline-flex;
+  vertical-align: top;
+  white-space: nowrap;
+  font-size: 0;
+}
+main .container980 section.product_data .add2cart_container .addtocart_holder .priceAndPlusMinus input[type=button] {
+  padding: 0 5px;
+  min-width: 25px;
+  height: 42px;
+  border: 2px solid rgba(129, 129, 129, 0.2);
+  /* background: 0 0; */
+  background-color: white;
+  box-shadow: none;
+  display: inline-block;
+  color: #777;
+}
+main .container980 section.product_data .add2cart_container .addtocart_holder .priceAndPlusMinus input[type=button]:hover {
+  background-color: #4CAF50;
+  border-color: #4CAF50;
+  color: white;
+}
+main .container980 section.product_data .add2cart_container .addtocart_holder .priceAndPlusMinus input[type=number] {
+  width: 30px;
+  height: 42px;
+  border-right: none;
+  border-left: none;
+  text-align: center;
+  display: inline-block;
+  border-top: 2px solid rgba(129, 129, 129, 0.2);
+  border-bottom: 2px solid rgba(129, 129, 129, 0.2);
+  color: #777;
+}
+main .container980 section.product_data .add2cart_container .addtocart_holder .priceAndPlusMinus input[type=number]::-webkit-inner-spin-button,
+main .container980 section.product_data .add2cart_container .addtocart_holder .priceAndPlusMinus input[type=number] ::-webkit-outer-spin-button {
+  appearance: none;
+  -webkit-appearance: none;
 }
 main .container980 section.product_data .add2cart_container .addtocart_holder .add_btn button {
   width: 70%;

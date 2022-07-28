@@ -18,26 +18,43 @@ main {
         padding: 10px 10px;
 
         aside {
-            width: 200px;
-            flex-grow: 1;
+            min-width: 220px;
+            max-width: 220px;
             padding: 0px 8px;
             background-color: $colorWhite;
             border: 1px solid $colorWhite;
             border-radius: 10px;
+            flex-grow: 1; 
 
             .filter_container {
                 form {
-                    p {
+                    div.filter_category {
+                        /* display:flex;
+                        flex-flow: column wrap; */
+                        padding: 10px 0;
+                        &:not([id="side_radio"]) {
+                            display:flex;
+                            flex-flow: column wrap; 
+                        }
                         select {
                             width: 160px;
                         }
+                        .frm_price_flex {
+                            display:flex;
+                            flex-flow: row wrap;
+                            align-items: center;
+                           input[type="number"] {
+                            width: 50px;
+                        } 
+                        }
+                        
                     }
                 }
             }
         }
 
         section.sect_popular_items {
-            width: auto;
+            max-width: 760px;
             flex-grow: 3;
 
             .prod_list_top {

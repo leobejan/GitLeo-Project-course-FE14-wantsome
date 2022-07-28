@@ -1,9 +1,12 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const productId = urlParams.get('prodId');
-//console.log(productId);
+if (!productId) {
+alert('u r visiting this page without query parameters, so no prodId will be collected from URL');
+}
+console.log(productId);
 dataAll = JSON.parse(localStorage.getItem('db-products'));
-// console.log(dataAll);
+console.log(dataAll);
 prod_details = dataAll.find(( { idProd } ) => idProd == productId);
 console.log(prod_details);
 
@@ -26,9 +29,9 @@ titleInsertCartArea.innerHTML = html2insert_title4cart;
 txtFromArrPrice = prod_details.price;
 let html2insert_price = `
 <h2>$: ${txtFromArrPrice}</h2>
-<button> - </button>
-<input type="text" id="qty" name="qty" maxlength="2" size="1" value="1">
-<button> + </button>
+<input type="button" value="-">
+<input type="number" id="qty" step="1" min="1" max="15" name="qty" value="1" size="4" placeholder="" inputmode="numeric">
+<input type="button" value="+">
 `;
 const priceInsert = document.querySelector('.priceAndPlusMinus');
 priceInsert.innerHTML = html2insert_price;

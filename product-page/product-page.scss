@@ -65,10 +65,12 @@ main {
                     width: 250px;
                     margin: auto;
                 }
+
                 .desc_text {
                     text-align: left;
                     margin-top: 15px;
                 }
+
                 .details_text {
                     text-align: left;
                     margin-top: 15px;
@@ -84,18 +86,63 @@ main {
                 border-radius: 5px;
                 margin: 10px;
                 padding: 10px;
+
                 .addtocart_holder {
                     width: 100%;
                     height: 200px;
                     background-color: #deefef;
                     border: 1px solid grey;
+
                     .priceAndPlusMinus {
-                        button {
+                        /* button {
                             width: 20px;
+                        } */
+
+                        display: inline-flex;
+                        vertical-align: top;
+                        white-space: nowrap;
+                        font-size: 0;
+
+                        input[type=button] {
+                            padding: 0 5px;
+                            min-width: 25px;
+                            height: 42px;
+                            border: 2px solid rgba(129, 129, 129, .2);
+                            /* background: 0 0; */
+                            background-color: $colorWhite;
+                            box-shadow: none;
+                            display: inline-block;
+                            color: #777;
+
+                            &:hover {
+                                background-color: $colorBtnSubmit;
+                                border-color: $colorBtnSubmit;
+                                color: $colorWhite;
+                            }
+                        }
+
+                        input[type=number] {
+                            width: 30px;
+                            height: 42px;
+
+                            border-right: none;
+                            border-left: none;
+                            text-align: center;
+                            display: inline-block;
+                            border-top: 2px solid rgba(129, 129, 129, 0.2);
+                            border-bottom: 2px solid rgba(129, 129, 129, 0.2);
+                            color: #777;
+
+                            &::-webkit-inner-spin-button,
+                            ::-webkit-outer-spin-button {
+                                appearance: none;
+                                -webkit-appearance: none;
+                            }
                         }
                     }
+
                     .add_btn {
-                        
+
                         button {
                             width: 70%;
                             background-color: $colorBtnSubmit;
@@ -105,9 +152,9 @@ main {
                             border: none;
                             border-radius: 4px;
                             cursor: pointer;
-                        
+
                             &:hover {
-                              background-color: $colorBtnSubmitHover;
+                                background-color: $colorBtnSubmitHover;
                             }
                         }
                     }
