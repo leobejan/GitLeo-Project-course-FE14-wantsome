@@ -18,8 +18,8 @@ main {
         padding: 10px 10px;
 
         aside {
-            min-width: 220px;
-            max-width: 220px;
+            min-width: 210px;
+            max-width: 210px;
             padding: 0px 8px;
             background-color: $colorWhite;
             border: 1px solid $colorWhite;
@@ -54,7 +54,7 @@ main {
         }
 
         section.sect_popular_items {
-            max-width: 760px;
+            max-width: 770px;
             flex-grow: 3;
 
             .prod_list_top {

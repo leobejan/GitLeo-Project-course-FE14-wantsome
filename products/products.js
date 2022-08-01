@@ -35,13 +35,20 @@ async function getItemsFromExtract(variableToPassIt) {
     let htmlInitial = `<option value="">ALL</option>`;
     let html = '';
     let htmlSegment = '';
+
+    //to play with: get number of products for each option - BEGIN
+    let productsArr = await JSON.parse(localStorage.getItem('db-products'));
+    //to play with: get number of products for each option - END
+
     switch (variableToPassIt) {
         case 'types':
             toWhomAppend = document.querySelector('#sel_type');
-            // console.log('toWhomAppend: ', toWhomAppend);            
-            
+            // console.log('toWhomAppend: ', toWhomAppend);             
             itemsExtract.slice(0, 5).forEach((item) => {
-                htmlSegment = `<option value="${item}">${item}</option>`;
+                //we count how many items are for every type/category
+                const count = productsArr.reduce((acc, cur) => cur.Type.toLowerCase() === item.toLowerCase() ? ++acc : acc, 0);
+
+                htmlSegment = `<option value="${item}">${item} (${count})</option>`;
                 html += htmlSegment;
             });
             toWhomAppend.innerHTML =  htmlInitial + html;
@@ -50,7 +57,10 @@ async function getItemsFromExtract(variableToPassIt) {
             toWhomAppend = document.querySelector('#sel_brand');
             // console.log('toWhomAppend2: ', toWhomAppend2);
             itemsExtract.forEach((item) => {
-                htmlSegment = `<option value="${item}">${item}</option>`;
+                //we count how many items are for every type/category
+                const count = productsArr.reduce((acc, cur) => cur.Brand.toLowerCase() === item.toLowerCase() ? ++acc : acc, 0);
+
+                htmlSegment = `<option value="${item}">${item} (${count})</option>`;
                 html += htmlSegment;
             });
             toWhomAppend.innerHTML =  htmlInitial + html;
@@ -110,10 +120,14 @@ const filteredArr = rawArrFromLS.filter( (n) => {
     console.log('type_fromHtml ::', type_fromHtml);
     console.log('n.Type ::', n.Type);
 
+    console.log('n.LRhand ::', n.LRhand);
+
     console.log('colours_fromHtml.length ::', colours_fromHtml.length);
     console.log('n.Colour ::', n.Colour.toLowerCase());
     console.log('colours_fromHtml.includes(n.Colour) ::', colours_fromHtml.includes(n.Colour.toLowerCase()));
     return (!type_fromHtml || n.Type.toLowerCase() === type_fromHtml) 
+    && (!brand_fromHtml || n.Brand.toLowerCase() === brand_fromHtml)
+    && (!side_fromHtml_checked || side_fromHtml_checked  === "Both".toLowerCase() || n.LRhand.toLowerCase() === side_fromHtml_checked)
             && (!colours_fromHtml.length || colours_fromHtml.includes(n.Colour.toLowerCase()));
 })
 

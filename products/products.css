@@ -17,8 +17,8 @@ main .container980 {
   padding: 10px 10px;
 }
 main .container980 aside {
-  min-width: 220px;
-  max-width: 220px;
+  min-width: 210px;
+  max-width: 210px;
   padding: 0px 8px;
   background-color: white;
   border: 1px solid white;
@@ -46,7 +46,7 @@ main .container980 aside .filter_container form div.filter_category .frm_price_f
   width: 50px;
 }
 main .container980 section.sect_popular_items {
-  max-width: 760px;
+  max-width: 770px;
   flex-grow: 3;
 }
 main .container980 section.sect_popular_items .prod_list_top {
